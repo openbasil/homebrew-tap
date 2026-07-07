@@ -6,9 +6,8 @@ SPDX-License-Identifier: Apache-2.0
 
 # OpenBasil Homebrew Tap
 
-Homebrew tap for [`basil`](https://github.com/openbasil/basil) — the OpenBasil
-secret / cryptographic-operation broker CLI (ships the `basil` binary and the
-`basil-nats-bridge` courier).
+Homebrew tap for [`basil`](https://github.com/openbasil/basil), the OpenBasil
+secret / cryptographic-operation broker CLI `basil` and the `basil-nats-bridge`.
 
 ## Install
 
@@ -19,7 +18,7 @@ brew install openbasil/tap/basil
 or, tapping first:
 
 ```sh
-brew tap openbasil/tap        # → github.com/openbasil/homebrew-tap
+brew tap openbasil/tap        # github.com/openbasil/homebrew-tap
 brew install basil
 ```
 
@@ -42,7 +41,5 @@ brew uninstall basil
 `openbasil/basil` repository on every `basil-v*` release (the
 `publish-homebrew-formula` job in that repo's `.github/workflows/release.yml`).
 
-**Do not edit `Formula/*.rb` by hand** — the next release overwrites it. To
+**Do not edit `Formula/*.rb` by hand**! The next release overwrites it. To
 change how the formula is produced, edit `dist-workspace.toml` in the main repo.
-
-See [`SETUP.md`](./SETUP.md) for how this tap was created and wired up.
