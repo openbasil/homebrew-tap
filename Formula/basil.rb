@@ -1,19 +1,19 @@
 class Basil < Formula
-  desc "Unified Basil operator and client binary."
+  desc "Basil is a host-local secrets broker: your app never touches the key. Unified broker daemon, operator tool, and client CLI."
   homepage "https://github.com/openbasil/basil"
-  version "0.7.0"
+  version "0.7.1"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/openbasil/basil/releases/download/v0.7.0/basil-bin-aarch64-apple-darwin.tar.xz"
-    sha256 "4045f418d80d526d45e9ac62f14833b0ed0506ee741dad97f5e63b542fd7005e"
+    url "https://github.com/openbasil/basil/releases/download/v0.7.1/basil-bin-aarch64-apple-darwin.tar.xz"
+    sha256 "4e758a8487d777360dd3ef76f3c0f46db755a1700024fb7ea5dea9bb154b6868"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/openbasil/basil/releases/download/v0.7.0/basil-bin-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7efbad68bbd4000ed8530bde4790c358abf07c09181ba34fcd0d112fdad5a689"
+      url "https://github.com/openbasil/basil/releases/download/v0.7.1/basil-bin-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "1a288712758e179559de43715113a2c7afbbf7d55eb94f11b50e01f829b791ae"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/openbasil/basil/releases/download/v0.7.0/basil-bin-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "00fb86daf337cf41dee33711f10343695c3acd6d30f8a192b6dd8505f220d899"
+      url "https://github.com/openbasil/basil/releases/download/v0.7.1/basil-bin-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "897e828ddb9eb46f1eb64cb5155951fd4294c431da07197383a145cda336d8b5"
     end
   end
   license "Apache-2.0"
